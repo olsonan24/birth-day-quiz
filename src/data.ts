@@ -322,14 +322,76 @@ export const offerBullets: string[] = [
   "Why being more patient or more strict both fail with certain children",
 ];
 
-/* ── Value Stack ── */
-export const valueStack: string[] = [
-  "Your child's full blueprint (127 page guide)",
-];
+/* ── Offer Stack Items ── */
+export interface OfferStackItem {
+  emoji: string;
+  title: string;
+  value: string;
+  description: string;
+  bullets?: string[];
+  callout?: string;
+}
 
-export const bonuses: string[] = [
-  "How to stop meltdowns without yelling or repeating yourself",
-  "The exact way to connect with your child so they actually open up",
-  "Simple ways to improve focus, behavior, and emotional balance naturally",
-  "A step by step system to build confidence and emotional control",
+export const offerStackItems: OfferStackItem[] = [
+  {
+    emoji: "✅",
+    title: "The Day Your Child Was Born (The Master Book)",
+    value: "$197",
+    description:
+      "This complete guide reveals exactly how your child's birth date shapes their personality, emotional tendencies, and behavior patterns. Inside the book, you'll unlock:",
+    callout:
+      "Each section builds on the last — giving you a complete picture of how your child thinks, feels, and responds.",
+  },
+  {
+    emoji: "🧩",
+    title: "The Birth-Day Personality Decoder",
+    value: "$97",
+    description:
+      "Found inside the book, this is the exact breakdown for your child's specific birth day (1st through 31st). You will discover:",
+    bullets: [
+      "A detailed breakdown of their core personality traits.",
+      "Their natural strengths and underlying challenges.",
+      "How they experience and interact with the world around them.",
+    ],
+    callout: "This is the part where parents recognize their child immediately.",
+  },
+  {
+    emoji: "🔍",
+    title: "The Behavior Translation Framework",
+    value: "$67",
+    description:
+      "Stop guessing why they act the way they do. This framework connects your child's personality to what you see every day. You'll finally understand:",
+    bullets: [
+      "Why certain frustrating behaviors keep repeating.",
+      "Why specific situations trigger immediate, strong reactions.",
+    ],
+    callout:
+      "Behavior finally starts to make sense instead of feeling random.",
+  },
+  {
+    emoji: "🧠",
+    title: "The Internal Emotional Map",
+    value: "$57",
+    description:
+      "Not all children experience emotions the same way. The emotional wiring sections help you see:",
+    bullets: [
+      "How your child internally handles stress and overwhelm.",
+      "Why they may explode quickly… or completely shut down.",
+    ],
+    callout:
+      "You understand what's happening beneath the surface before it spirals.",
+  },
+  {
+    emoji: "🔮",
+    title: "The Parenting Approach Shift",
+    value: "$47",
+    description:
+      "This reveals exactly why what works for one child completely backfires with another. You will learn:",
+    bullets: [
+      "Why standard parenting advice might actually trigger your child's resistance.",
+      "What specifically makes your child feel safe and understood.",
+    ],
+    callout:
+      "This gives immediate relief to the frustration many parents feel.",
+  },
 ];
